@@ -1,0 +1,459 @@
+/* ! base style */
+body{
+  font-size: 16px;
+  font-family: "mntsrrt-web", "helvetica neue", arial, sans-serif;
+  overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, p{color: #000;padding-bottom: 30px;}
+
+p{line-height: 28px;color: #666;font-weight: 300;}
+button{font-family: 'Inter', sans-serif;font-size: 16px;}
+.big-text{font-size: 50px;font-weight: 900;}
+.med-text{font-size: 40px;}
+.normal-text{font-size: 20px;}
+.small-text{font-size: 14px;}
+
+.intro-text{text-transform: uppercase;font-size: 20px;font-weight: bold;}
+
+.insta a:link,a:visited{
+  color: #fff;
+}
+
+
+.button{padding: 18px 28px;background: #FF6600;color: #fff;display: inline-block;border-radius: 4px;}
+@media (max-width: 768px) {
+  .big-text{font-size: 40px;}
+  .small-text-sma{font-size: 14px;}
+}
+
+.intro{
+  padding-top: 100px;
+  text-align: center;
+}
+.intro-title{text-transform: uppercase;}
+
+.intro-content {padding-bottom: 25px;font-family: "mntsrrt-web", "helvetica neue", arial, sans-serif}
+/* ! header */
+
+
+.header{
+  width: 100%;
+  position: fixed;
+  top:0;
+  left:50%;
+  transform: translateX(-50%);
+  padding: 16px;
+  display: flex;
+  z-index: 168;
+  background: #989898;
+}
+
+.logo{z-index: 169;}
+.logo img{width: 90%;height: 90%;}
+.menu{
+  padding-left: 520px;
+  padding-bottom: 50px;
+  transition: all 1s cubic-bezier(.215,.61,.355,1);
+  width: 100%;
+  z-index: 0;
+}
+
+.menu li{display: inline-block;}
+
+.menu li a{color: #fff;padding: 15px 5px;  display: block;}
+
+.menu button{
+  color: #fff;
+  display: block;
+  background: #FF6600;
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+}
+/* Dropdown Button */
+.dropbtn {padding: 18px 25px;background: #FF6600;color: #fff;display: inline-block;border-radius: 4px;}
+.dropbtn-1 {background: #989898;}
+
+.about {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.about:hover {
+  background-color: #2980B9;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:focus {
+  background-color: #FF9966;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  display: inline-block;
+}
+.dropdown button{
+
+  color: #fff;
+  padding: 16px 10px;
+  display: block;
+  background: #FF6600;
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FF6600;
+  min-width: 160px;
+  /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+  z-index: 1;
+  border-radius: 4px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.hamburger{display: none;}
+@media (max-width: 768px) {
+  .header{padding: 28px 15px;}
+  .logo{width: 250px;}
+  .logo img{width: 100%;height: 100%;}
+  .cta{display: none}
+  .menu{position: absolute; top: 0;right: -150%;background: #989898;height: 100vh;padding-top: 180px;padding-left: 0;}
+  .menu li{display: block;}
+  .menu li a{padding: 15px 30px;font-size: 20px;}
+  .menu--open{right: 0%;}
+  .hamburger{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+  }
+  .menu button{
+    margin-top: 20px;
+  }
+  .dropdown button{padding-left: 30px;padding-right: 30px;font-size: 20px;}
+}
+.hamburger span{background: #fff;height: 3px;width: 100%;display: block;margin-bottom: 5px;}
+
+/*! BG cover*/
+
+.bg-cover{
+  display: flex;
+  padding: 72px 0;
+  background: linear-gradient(0deg, rgba(0,0,0,.8), rgba(0,0,0, 0.8) ), url("imgs/gas.jpeg") no-repeat center center;
+  background-size: cover;
+}
+.bg-cover--img{background:linear-gradient(0deg, rgba(0,0,0,.8), rgba(0,0,0, 0.8) ), url("immagini/tristezza/spiaggiabellai.jpeg");background-size: cover;}
+.bg-cover__text{width: 50%;padding: 30px;}
+.bg-cover__title{width: 50%;padding: 50px;display: flex;align-items: center;}
+@media (max-width: 768px) {
+  .bg-cover{flex-wrap: wrap;}
+
+  .bg-cover__text,
+  .bg-cover__title{width: 100%;}
+}
+/*! poster*/
+
+.poster{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+}
+
+.poster__img{width: 65%; height: 65%;}
+.poster__img img{object-fit: cover;width: 100%;height: 100%;}
+.poster__content{width: 35%;padding: 50px;}
+.poster__content ul{padding-left: 20px;list-style-type: square;}
+.li-1{color: red;}
+.li-2{color: orange;}
+.li-3{color: green;}
+
+@media (max-width: 768px) {
+  .poster{flex-wrap: wrap; height: auto;}
+  .poster__img,
+  .poster__content{width: 100%;}
+}
+/* Slider*/
+.slider{
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  align-items: center;
+}
+.slider__content {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.7);
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 205px;
+  padding-left: 50px;
+  text-align: center;
+}
+.slider__content p{
+    color: white;
+    font-size: 30px;
+    font-family: "mntsrrt-web", "helvetica neue", arial, sans-serif;
+    font-weight: bold;
+}
+.slides{
+  width: 500%;
+  height: 500px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+.slides input{
+  display: none;
+}
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+.slide img{
+  width: 100%;
+  height: 600px;
+  filter:blur(3px);
+}
+
+.navigation-manual{
+  position: absolute;
+  width: 100%;
+  margin-top: -40px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+.manual-btn{
+  border: 2px solid #666;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  margin-left: 50px;
+}
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+.manual-btn:hover{
+  background: #666;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+.navigation-auto{
+  position: absolute;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 460px;
+  z-index: 3;
+}
+.navigation-auto div{
+  border: 2px solid #666;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+  margin-left: 50px;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #666;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #666;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #666;
+}
+
+@media  (max-width: 768px){
+  .slider__content{
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    padding-left: 12px;
+  }
+  .slider__content p{
+    font-size: 17px;
+    font-weight: bold;
+}
+  .manual-btn{
+    margin-left: 10px;
+  }
+  .navigation-auto div{
+    margin-left: 10px;
+  }
+  #radio1:active{
+    background: opacity(0.1);
+  }
+}
+/*! Grid*/
+
+.grid{display: flex;max-width: 1350px;padding-left:150px;margin: 0 auto;}
+.grid .col-1{width: 50%;z-index: 0;}
+.grid .col-2{width: 40%;z-index: 0;}
+.grid .col-3{width: 5%;z-index: 0;}
+.grid .col-2 img{width: 300px;height: 200px; }
+.grid .col-2 img:hover{opacity: 0.8; cursor:pointer;}
+
+@media (max-width: 768px) {
+  .grid{flex-wrap: wrap;}
+  .grid .col-2 img{display: none;}
+}
+#expandedImg {
+  padding-left: 400px;
+  width: 75%;
+}
+.container {
+  position: relative;
+  display: none;
+}
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 400px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+.closebtn:hover {color: #ffea00 ;}
+/*footer*/
+.footer{
+  background: #989898;
+  padding: 50px 0;
+}
+.fonti a{
+    color: #666;
+    font-weight: bold
+}
+.mappa-sito a{
+  color: #666;
+}
+
+/* ! helper */
+
+.mt-1{margin-top: 50px;}
+.mt-2{margin-top: 100px;}
+.mt-3{margin-top: 120px;}
+.tw{color: #fff;}
+.tb{color: #000;}
+
+@media (max-width: 768px) {
+  .mt-sma-0{margin-top: 0;}
+  .mb-sma-0{margin-bottom: 0;}
+  .mt-sma-2{margin-top: 100px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+<div class="bg-cover mt-3">
+
+  <div class="bg-cover__title reveal">
+
+    <h3 class="big-text tw">Il problema nelle spiagge</h3>
+  </div>
+  <div class="bg-cover__text reveal">
+    <h4 class="normal-text tw">Nelle spiagge italiane</h4>
+    <p class="tw">Ben 783 rifiuti ogni centro metri sulle spiagge italiane, l'84% dei quali è costituito da plastica. L'indagine evidenzia che nelle 47 spiagge monitorate in 13 regioni (Abruzzo, Basilicata, Toscana, Calabria, Campania, Emilia Romagna, Friuli Venezia Giulia, Lazio, Marche, Puglia, Sardegna, Sicilia, Veneto) sono stati censiti 36821 rifiuti in un'area totale di 176.100 mq.
+      Una media di 783 rifiuti ogni 100 metri lineari di spiaggia che supera di gran lunga il valore soglia o il target di riferimento stabilito a livello europeo per considerare una spiaggia in buono stato ambientale, ossia meno di 20 rifiuti spiaggiati ogni 100 metri lineari di costa.</p>
+      <h4 class="normal-text tw">Nelle spiagge mondiali</h4>
+      <p class="tw">Con tutta la plastica che c'è nei mari potremmo fare 400 volte il giro della Terra. 8 milioni di tonnellate, soprattutto microplastiche e plastica monouso non riciclata, finiscono ogni anno in mare, diventando cibo per pesci. 700 le vittime tra le specie a rischio: scambiano la plastica per cibo e muoiono per indigestione o soffocamento. La plastica sta letteralmente invadendo il mare, in assenza di leggi ambiziose e di comportamenti responsabili delle imprese, che continuano ancora oggi ad inondarci di prodotti monouso, pur sapendo che il riciclo da solo non basta.</p>
+
+
+  </div>
+  </div>
+
+
+*/

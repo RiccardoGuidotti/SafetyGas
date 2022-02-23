@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta hhtp-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Safety Gas</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../stylepages.css">
+
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="../imgs/logo_large.png" >
+    </div>
+    <ul class="menu">
+      <li><button><a href="../index.html" class="button">Home</a></button></li>
+      <li>
+        <div class="dropdown">
+
+          <button onclick="myFunction()" class="dropbtn" >Contatti</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="https://www.instagram.com/luca__turrini/" target="_blank" >Luca Turrini</a>
+            <a href="https://www.instagram.com/riccardo.guidottii/" target="_blank" >Riccardo Guidotti</a>
+            <a href="https://www.instagram.com/riki.nicolini/" target="_blank"  >Riccardo Nicolini</a>
+            <a href="https://www.instagram.com/peppe.plata/" target="_blank" >Giuseppe Platania</a>
+            <a href="https://www.instagram.com/imen.jeff/" target="_blank" >Jaafar Imane</a>
+          </div>
+        </div>
+      </li>
+      <li><button><a href="modello.html"class="button">Modello</a></button></li>
+      <li><button><a href="https://www.youtube.com/watch?v=kSn8Pgv80ds" target="_blank"class="button">Spot publicitario</a></button></li>
+    </ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="intro mt-3 ">
+      <h3 class="big-text intro-title intro-content reveal">Il nostro modello</h3>
+      <p class="normal-text intro-content reveal">Abbiamo pensato di realizzare un articolo con piccole dimensioni, per non occupare quantit&agrave di spazio elevate.<br>Verr&agrave installato su una parete quindi il colore non sar&agrave eccentrico.<br>Il materiale sar&agrave ecologico, e il funzionamento non emetter&agrave sostanze nocive.</p>
+  </div>
+
+  <div class="grid">
+    <div class="col-2 reveal">
+      <img src="../imgs/foto1.png" alt="" onclick="tabGallery(this)">
+    </div>
+    <div class="col-2 reveal">
+      <img src="../imgs/foto3.png" alt=""  onclick="tabGallery(this)">
+    </div>
+    <div class="col-2 reveal">
+      <img src="../imgs/foto4.png" alt=""  onclick="tabGallery(this)">
+    </div>
+  </div>
+
+
+  <div class="container mt-1 ">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" alt="">
+  </div>
+  <div class="poster mt-1">
+    <div class="poster__img reveal">
+      <img src="../imgs/ezgif.com-gif-maker.gif" >
+    </div>
+    <div class="poster__content reveal">
+      <h3 class="big-text  intro-content">I tre sensori</h3>
+      <p class="intro-content">Tre sensori che monitorano la qualit&agrave dell'aria e in base alla quantit&agrave rilevata
+      illuminano lo schermo di tre colori diversi.<br/></p>
+      <ul class="intro-content">
+        <li class="li-3">Verde: quantit&agrave nulla.</li>
+
+        <li class="li-2">Giallo: quantit&agrave media.</li>
+        <li class="li-1">Rosso: quantit&agrave elevata.</li>
+
+      </ul>
+
+
+    </div>
+  </div>
+  <div class="poster mt-1">
+
+    <div class="poster__content reveal">
+      <h3 class="big-text intro-content">Cassa integrata</h3>
+      <p class="intro-content">Forniamo una cassa integrata, che trasmette il messaggio vocale che il sistema avvier&agrave quando l'aria sar&agrave compromessa da fughe di gas; per essere sicuri che l'utente se ne sia accorto. Al termine di un timer il sistema invier&agrave un SMS di emergenza ai servizi del 115.</p>
+
+
+    </div>
+    <div class="poster__img reveal">
+      <img src="../imgs/cassa.jpeg" >
+    </div>
+  </div>
+
+
+<footer class="footer mt-3">
+
+<p class=" small-text">Copyrot All the cospirights rghts resved.</p>
+
+</footer>
+<!--Jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <script src="../script.js"> </script>
+</body>
+</html>
